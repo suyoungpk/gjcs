@@ -1,0 +1,302 @@
+@charset "utf-8";
+@import url(./common.css);
+@import url(./layout.css);
+@import url(./table.css);
+
+.sub-visual{ background-repeat: no-repeat;background-position:center}
+.sportCentre .sub-visual {background-image:url(../images/sub/img-visual-sportCentre.png)}
+.gigym .sub-visual {background-image:url(../images/sub/img-visual-gigym.png)}
+.madang .sub-visual {background-image:url(../images/sub/img-visual-madang.png)}
+
+.anchor-content .anchor-tit{display:flex;justify-content: space-between;align-items: center;}
+.anchor-tit .title-st3{color:#666;font-size:15px;}
+
+.alert{padding:15px 10px}
+.alert p{position:relative;font-size:14px;color:#F83E25;line-height:1.2em;padding-left:17px}
+.alert p::before{position:absolute;top:0;left:10px;font:inherit;content:'·'}
+
+.anchor-content + .anchor-content{margin:40px 0 0}
+
+.sportCentre.program03 .contents-header h1,
+.madang.service .contents-header h1{width:35%}
+
+/* sportCentre 
+ 프로그램 안내 */
+.sportCentre.program .tab-st{margin-bottom:56px;}
+.sportCentre.program .tab-st li{width:33.33%;}
+.sportCentre.program01 .play span{overflow: hidden;display: inline-block;position:absolute;top:50%;left:50%;width: 26px;height: 26px;padding-top: 26px;background: url(../images/table/table_arr.png) no-repeat center right;vertical-align: middle;transform: translate(570%,-50%);}
+.sportCentre.program01 .info-list .gray{margin-bottom:34px;}
+.sportCentre.program01 .info-list > li li{padding-left:23px;}
+.sportCentre.program01 .gray::before{display: none;}
+.sportCentre.program01 .gray ul li::before{display: none;}
+.sportCentre.program01 .txt-wrap2{background:#F7F9FC;}
+.sportCentre.program01 .txt-wrap2 p{padding:39px 0;color:#242E47;font-size:16px;font-weight:700;text-align:center;}
+.sportCentre.program01 .info-list.dotted{padding:15px 30px;}
+.sportCentre.program01 .info-list.dotted li{color:#666;}
+.sportCentre.program05 .anchor-content .anchor-tit{justify-content: flex-end;}
+.sportCentre.program05 .gray::before{display: none;}
+.sportCentre.program05 .red > ul li{color:#666;}
+
+/* 대관 안내 */
+.sportCentre.rent .procedure{margin-bottom:20px;}
+.sportCentre.rent .procedure ul{display:flex;width: 100%;margin:42px auto 0;justify-content: center;flex-flow: row wrap;}
+.sportCentre.rent .procedure li{display:flex;width: 162px;height: 92px;margin: 0 -12px;text-align: center;border-radius:40px;box-shadow:0 5px 5px 5px rgba(0,0,0,0.1);align-items: center;justify-content: center;}
+.sportCentre.rent .procedure li p{color:#fff;font-size:14px;font-weight: 700;}
+.sportCentre.rent .procedure li span{font-weight: 500;}
+.sportCentre.rent .procedure .box01{z-index:10;background:rgba(241, 130, 0,0.8);}
+.sportCentre.rent .procedure .box02{z-index:9;background:rgba(191, 194, 0,0.8);}
+.sportCentre.rent .procedure .box03{z-index:8;background:rgba(4, 180, 159,0.8);}
+.sportCentre.rent .procedure .box04{z-index:7;background:rgba(4, 171, 180,0.8);}
+.sportCentre.rent .procedure .box05{z-index:6;background:rgba(37, 135, 167,0.8);}
+.sportCentre.rent .procedure .box06{z-index:5;background:rgba(39, 79, 106,0.8);}
+.sportCentre.rent .procedure .box07{z-index:4;background:rgba(109, 136, 181,0.8);}
+.sportCentre.rent .anchor-content .bank{margin-top:10px;padding-left:30px;font-size:14px;font-weight:500;}
+.sportCentre.rent .anchor-content .bank span{color:#666;font-weight:300;word-break: keep-all;}
+.sportCentre.rent .info-list{padding-left:38px;}
+.sportCentre.rent .info-list .red .gray::before{display:none;}
+.sportCentre.rent .info-list.dotted{padding-top:20px;padding-left:28px;}
+.sportCentre.rent .info-list.dotted .gray{margin-bottom:10px;}
+.sportCentre.rent table.cont.apply td{padding-top:6px;}
+/* .sportCentre.rent table.cont.apply a.down_hwp{margin-top:-2px;} */
+
+/* 셔틀버스 안내 */
+.sportCentre.shuttlebus01 .bus{width:100%;margin:20px 0;}
+.sportCentre.shuttlebus01 .bus.tablet,
+.sportCentre.shuttlebus01 .bus.mobile{display: none;}
+.sportCentre.shuttlebus01 .bus span{position: absolute;width:1px;height:1px;clip:rect(0,0,0,0);clip:rect(0 0 0 0);opacity: 0;}
+
+/* 찾아오시는 길 */
+.sportCentre.map .tab-st li{width:50%;}
+.sportCentre.map .map-content ul{display:table;width:100%;}
+.sportCentre.map .map-content li{display:table-cell;position:relative;width:50%;height:75px;text-align:center;background:#F7F9FC;vertical-align: middle;}
+.sportCentre.map .map-content li:first-of-type::after{content:'';display:inline-block;position:absolute;top:0;right:0;width:10px;height:75px;background:#fff;}
+.sportCentre.map .title-st2{font-size: 14px;font-weight: 500;line-height: 30px;margin: 10px 0 0 10px;color: #333;overflow: hidden;padding: 0 0 0 25px;}
+.sportCentre.map .title-st2 strong{position: relative;padding-left:25px;word-break: break-all;}
+.sportCentre.map .map-wrap .title-st2 strong::before{content: "";position: absolute;top: 5px;left: 0;background: url(../images/table/h3_ico.png) no-repeat;width: 9px;height: 10px;}
+.sportCentre.map .map-wrap .title-st2 span{color:#666;}
+.sportCentre.map .transportation{padding-top:60px;}
+.sportCentre.map .title-st{font-size: 20px;font-weight: 700;line-height: 30px;color: #333;padding: 0 0 0 27px;position: relative;}
+.sportCentre.map .title-st::before{content: "";position: absolute;top: 5px;left: 0;background: url(../images/table/h2_ico.png) no-repeat;width: 20px;height: 20px;}
+.sportCentre.map .map-box{width:100%;height:520px;margin-bottom:14px;background:#F7F9FC}
+.sportCentre.map .tabcon1,
+.sportCentre.map .tabcon2{padding-top:35px;}
+.sportCentre.map .tabcon2 .map-box{margin:20px 0;}
+.sportCentre.map .transportation .title-st2{position: relative;margin-top:0;padding-left:16px;word-break: break-all;}
+.sportCentre.map .transportation .title-st2::before{content: "";position: absolute;top:10px;left:0;background: url(../images/table/h3_ico.png) no-repeat;width: 9px;height: 10px;}
+.sportCentre.map .transportation .txt:first-of-type{padding-bottom:40px;border-bottom:1px solid #c2c2c2;}
+.sportCentre.map .transportation .info-list.dotted{padding-left:30px;}
+.sportCentre.map .transportation .txt:last-of-type .title-st2{margin-top:30px;}
+.sportCentre.map .transportation .info-list-li{margin-bottom:16px;}
+.sportCentre.map .transportation .orange{display:block;color:#F83E25;}
+.sportCentre.map .transportation .orange span{margin-left:4px;color:#666;}
+.sportCentre.map .tabcon2 .map-wrap:last-of-type{padding-top:42px;}
+.sportCentre.map .tabcon2 .map-content li{width:100%;color:#666;}
+.sportCentre.map .tabcon2 .map-content .info-list.dotted > li:before{display: none;}
+.sportCentre.map .tabcon2 .map-content strong{position:relative;padding-left:25px;color:#333;font-weight:700;}
+.sportCentre.map .tabcon2 .map-content .info-list.dotted strong:before{content: '·';position:absolute;left:10px;}
+.sportCentre.map .tabcon2 .map-content li:first-of-type::after{display: none;}
+.sportCentre.map .tabcon2 .map-content .arrow{margin:0 4px;}
+.sportCentre.map .tabcon2 .tit-wrap{text-align: center;}
+.sportCentre.map .tabcon2 .tit-wrap .title-st2{position:relative;display: inline-block;margin-top:18px;padding-left:15px;}
+.sportCentre.map .tabcon2 .tit-wrap .title-st2::before{content: "";position: absolute;top:10px;left: 0;background: url(../images/table/h3_ico.png) no-repeat;width: 9px;height: 10px;}
+
+.sportCentre.usage .process{width:100%;overflow:hidden;margin:15px 0 0;padding:30px 0 20px;border-top:2px solid #242E47;border-bottom:1px solid #8E8787}
+.sportCentre.usage .process + .title-st2{margin:30px 0 0}
+.sportCentre.usage .process .process-bar{display:flex;flex-flow:row wrap;width:100%;overflow:hidden;align-items: center;justify-content: flex-start;box-shadow: 0 3px 10px rgba(0,0,0,.25)}
+.sportCentre.usage .process .process-bar li{position:relative;display:inline-flex;;align-items: center;justify-content: center;width:20%;height:80px;text-align:center;color:#fff;}
+.sportCentre.usage .process .process-bar li::before{position:absolute;top:0;left:0;width:calc(100% + 10px);height:100%;content:'';z-index:0;background-position: -5px 0;background-repeat:no-repeat}
+.sportCentre.usage .process .process-bar li:nth-child(1)::before{background-image:url(../images/sub/bg-process01.png);z-index:15}
+.sportCentre.usage .process .process-bar li:nth-child(2)::before{background-image:url(../images/sub/bg-process02.png);z-index:14}
+.sportCentre.usage .process .process-bar li:nth-child(3)::before{background-image:url(../images/sub/bg-process03.png);z-index:13}
+.sportCentre.usage .process .process-bar li:nth-child(4)::before{background-image:url(../images/sub/bg-process04.png);z-index:12}
+.sportCentre.usage .process .process-bar li:nth-child(5)::before{background-image:url(../images/sub/bg-process05.png);z-index:10}
+.sportCentre.usage .process .process-bar li > span{position:relative;font-size:14px;line-height:20px;z-index:18}
+.sportCentre.usage .process .process-bar li strong{display:block;font-weight:700}
+
+.sportCentre.certification article + article{margin:60px 0 0 }
+.sportCentre.certification article dl{display:flex;}
+.sportCentre.certification article dl dt{width:80px}
+.sportCentre.certification article dl dd{width:calc(100% - 80px);color:#666;font-weight:normal}
+.sportCentre.certification  .contents-box{padding:0 28px;font-size:14px;line-height:24px;color:#333;font-weight:500}
+
+.sportCentre.rules .tab-st{margin: 0 0 40px}
+.sportCentre.rules .tab-st li{width:25%}
+.sportCentre.rules article + article{margin:45px 0 0 }
+.sportCentre.rules .info-list{color:#666}
+.sportCentre.rules .important{width:100%;text-align:left;padding-left:8px;font-size:16px;color:#333;font-weight:700}
+
+/* madang */
+.madang.suggestion .contents-body .banner {position:relative}
+.madang.suggestion .contents-body .banner img{width:100%} 
+.madang.suggestion .contents-body .banner .btn{position:absolute;bottom:7.5%;left:50%;width:29.7%;height:6.25%;padding-top:6.5%;overflow:hidden;background:transparent}
+.madang.suggestion .contents-body .banner .btn-kakao{transform: translate(-103%,0)}
+.madang.suggestion .contents-body .banner .btn-suggest{transform: translate(3%,0)}
+
+.madang.service .tab-st {margin:0 0 40px}
+.madang.service .tab-st li{width:33.3%}
+.madang.service  .contents_table .title-st2:before{top:7px}
+.madang.service .contents_table .title-st2{font-size:14px;line-height:24px;font-weight:500}
+.madang.service .contents_table .title-st2 span {font:inherit;color:inherit;float:none}
+.madang.service .text-box{margin:40px 0 0;border-top:2px solid #242E47;border-bottom:1px solid #C2C2C2;padding:30px}
+.madang.service .text-box .info-list li{margin:10px 0;}
+.madang.service .text-box .sign{margin:20px 0 0;width:100%;text-align:center;font-size:15px;color:#333;font-weight:700}
+.madang.service .tabcon:nth-of-type(2) .info-list,
+.madang.service .tabcon:nth-of-type(3) .info-list{padding-left:30px}
+.madang.service .tabcon:nth-of-type(3) .tab-st2{margin:0 0 40px}
+.madang.service .tabcon:nth-of-type(3) .tab-st2 li{width:33.3%}
+.madang.service .tabcon:nth-of-type(3) .title-st2{margin-left:0}
+.madang.service .tabcon:nth-of-type(3)  .phase .info-list{padding-bottom:10px}
+
+.madang.voc .text-box{margin:0 0 35px;border-top:2px solid #242E47;border-bottom:1px solid #C2C2C2;padding:30px}
+.madang.voc .text-box p{font-size:15px;font-weight:500;color:#333;line-height:24px}
+.madang.voc .text-box p+p{margin:24px 0 0;font-weight:normal}
+.madang.voc .board-list  .status-cell{width:8.7%}
+.madang.voc .board-list  .status-cell strong{font-weight:500;color:#242E47}
+.madang.voc .board-list  .file-cell{width:6%}
+.madang.voc .board-list  .writer-cell{width:5.9%}
+.madang.voc .board-list  .writerId-cell{width:8.1%}
+.madang.voc .answer-card{margin:40px 0;border:1px solid #C2C2C2;border-radius:10px;overflow:hidden}
+.madang.voc .answer-card .board-table-editor{border:0}
+.madang.voc .answer-card dl:first-child{background:#F7F8FB;border-bottom:1px solid #c2c2c2}
+.madang.voc .answer-card dl:first-child dd{line-height:60px;padding:0 20px;font-size:14px;color:#333}
+.madang.voc .answer-card dl{display:flex;flex-flow:row wrap}
+.madang.voc .answer-card dl dt{background:#F7F8FB;border-right:1px solid #c2c2c2;display:inline-flex;align-items: center;justify-content: center;font-weight:700;color:#333;width:124px;text-align:center;}
+.madang.voc .answer-card dl dd{position:relative;width:calc(100% - 124px)}
+.madang.voc .answer-card dl dd .rightBox{position:absolute;top:50%;right:0;transform:translate(0,-50%)}
+.madang.voc .answer-card dl dd .rightBox p{position:relative;display:inline-block;vertical-align:middle;padding:0 20px;font-size:14px;color:#666}
+.madang.voc .answer-card dl dd .rightBox p + p::before{position:absolute;top:50%;left:0;width:1px;height:15px;background:#C2C2C2;transform: translate(0,-50%);content:''}
+.madang.voc .answer-card dl dd .rightBox .status{font-weight:700;color:#242E47}
+.madang .faq-toggle .title-cell,
+.madang .faq-toggle .answer{position:relative;}
+.madang .faq-toggle .title-cell::before,
+.madang .faq-toggle .answer::before{display:inline-block;position:absolute;top:0;left:0;border-radius:50%;text-align:center;line-height:24px;font-size:14px;color:#fff;font-weight:700;width:24px;height:24px;box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);}
+.madang .faq-toggle .title-cell::before{top:18px;left:0;content:'Q';background: linear-gradient(134.4deg, #FF8A00 4.12%, #FCD400 103.09%)}
+.madang .faq-toggle .answer::before{top:20px;left:7.7%;content:'A';background: linear-gradient(134.4deg, #33BDD1 4.12%, #35DAF2 103.09%);}
+.madang .faq-toggle .title-cell{padding-left:34px}
+.madang .faq-toggle .answer{display:none;border-top:1px solid #C2C2C2;padding:20px 20px 20px 7.7%;background:#F7F8FB}
+.madang .faq-toggle .answer > div{padding-left:34px;}
+.madang .faq-toggle .title-cell .title-wrap{width:100%;max-width:100%}
+
+@media screen and (max-width:768px) {
+    .sub-visual{background-size:auto 100%;}
+    .anchor-tit .title-st3{padding-left:26px;color:#666;font-size:15px;}
+    
+    .sportCentre.program03 .contents-header h1,
+    .madang.service .contents-header h1{width:100%}
+    /* sportCentre 
+    프로그램 안내 */
+    .sportCentre.program .tab-st li{width:50%;}
+    .sportCentre.program01 .anchor-content .anchor-tit{display:block;}
+    .sportCentre.program01 .contents_table{padding:0;}
+    .sportCentre.program01 .contents_table .title-st1{line-height:24px;}
+    .sportCentre.program01 .anchor-content .anchor-tit .title-st2{margin:0;line-height: 24px;}
+    .sportCentre.program01 .anchor-content .anchor-tit span{padding-left: 25px;color:#666;font-size:12px;}
+    .sportCentre.program01 .info-list{padding-left:26px;}
+    .sportCentre.program01 .info-list .gray{margin-bottom:30px;}
+    .sportCentre.program01 .txt-wrap2{padding-left:50px;padding-right:50px;}
+    .sportCentre.program01 .txt-wrap2 p{font-size:12px;}
+    .sportCentre.program01 .play span{overflow: hidden;display: inline-block;position:absolute;top:50%;left:50%;width: 26px;height: 26px;padding-top: 26px;background: url(../images/table/m_table_arr.png) no-repeat center right;vertical-align: middle;transform: translate(570%,-50%);background-size: cover;}
+    .sportCentre.program05 .anchor-content .anchor-tit{justify-content: flex-start;}
+    .sportCentre.program05 .anchor-content .anchor-tit span{padding-left: 25px;color: #666;font-size: 12px;}
+    
+    .sportCentre.rent .anchor-content .anchor-tit{display:block;}
+    .sportCentre.rent .title-st3{font-size:12px;}
+    .sportCentre.rent .anchor-content:first-of-type .info-list.dotted{margin-top:0;}
+    .sportCentre.rent .procedure ul{margin: 17px auto 0;padding:0 14px;justify-content: flex-start;}
+    .sportCentre.rent .procedure li{width:185px;height:92px;margin-top:10px;margin-bottom:10px;}
+    .sportCentre.rent .info-list{padding-left:0;}
+    .sportCentre.rent .info-list .red .gray{padding-left:0;}
+    
+    .sportCentre.shuttlebus01 .bus.pc,
+    .sportCentre.shuttlebus01 .bus.mobile{display: none;}
+    .sportCentre.shuttlebus01 .bus.tablet{display: block;}
+    
+    .sportCentre.map .transportation{padding-top:40px;}
+    .sportCentre.map .map-content li{display:flex;width:100%;margin-bottom:10px;justify-content: center;align-items: center;}
+    .sportCentre.map .map-content li:first-of-type::after{display: none;}
+    .sportCentre.map .map-wrap .title-st2 strong{display:block;padding-left:0;}
+    .sportCentre.map .title-st{font-size: 14px;line-height: 30px;padding: 0 0 0 27px;}
+    .sportCentre.map .title-st::before {top: 8px;left: 0;background: url(../images/table/h2_ico-m.png) no-repeat 0 0/cover;width: 16px;height: 16px;}
+    .sportCentre.map .transportation .info-list.dotted{padding-right:20px;}
+    .sportCentre.map .map-wrap .title-st2 strong::before{top:50%;left:50%;transform: translate(-500%,-50%);}
+    .sportCentre.map .tabcon2 .title-st{margin-top:30px;}
+    .sportCentre.map .tabcon2 .map-content li{display:table-cell;height:90px;padding-right:20px;text-align: left;}
+    .sportCentre.map .tabcon2 .map-content strong{display:block;}
+    .sportCentre.map .tabcon2 .map-content em{display:block;margin-left:28px;}
+
+    .sportCentre.usage .process{padding:20px 0 15px}
+    .sportCentre.usage .process .process-bar{box-shadow: none;padding-bottom:10px}
+    .sportCentre.usage .process .process-bar li{width:33.3%;height:80px;margin:10px 0 0;padding:0 10px;box-shadow: 0 5px 5px rgba(0,0,0,.25)}
+    .sportCentre.usage .process .process-bar li::before{left:auto;right:-11px;width:15px;height:100%;background-size:auto 100%;background-position:right center}
+    .sportCentre.usage .process .process-bar li:nth-child(1){background:#43C4C5}
+    .sportCentre.usage .process .process-bar li:nth-child(2){background:#42C6F1}
+    .sportCentre.usage .process .process-bar li:nth-child(3){background:#0B76C5}
+    .sportCentre.usage .process .process-bar li:nth-child(4){background:#084A92}
+    .sportCentre.usage .process .process-bar li:nth-child(5){background:#001965}
+    .sportCentre.usage .process .process-bar li:nth-child(1)::before{background-image:url(../images/sub/bg-process01-m.png)}
+    .sportCentre.usage .process .process-bar li:nth-child(2)::before{background-image:url(../images/sub/bg-process02-m.png)}
+    .sportCentre.usage .process .process-bar li:nth-child(3)::before{display:none}
+    .sportCentre.usage .process .process-bar li:nth-child(4)::before{background-image:url(../images/sub/bg-process04-m.png)}
+    .sportCentre.usage .process .process-bar li:nth-child(5)::before{display:none}
+    .sportCentre.usage .process .process-bar li:last-child{overflow:hidden}
+    .sportCentre.usage .process .process-bar li > span{font-size:11px;line-height:16px;word-break: keep-all;}
+    .sportCentre.usage .process .process-bar li strong{font-size:12px}
+
+    .sportCentre.rules article + article{margin:30px 0 0 }
+    .sportCentre.rules .tab-st{margin: 0 0 30px}
+    .sportCentre.rules .tab-st li{width:50%}
+    .sportCentre.rules .info-list{padding:0 15px}
+    .sportCentre.rules .important{font-size:12px;line-height:20px;text-align:left;padding:10px  15px}
+    .sportCentre.certification  .contents_table .title-st2:before{top:10px}
+    /* madang */
+    .madang.suggestion .contents-body .banner .btn{left:0;width:100%;height:0;padding-top:20%;transform: none}
+    .madang.suggestion .contents-body .banner .btn-kakao{bottom:10%}
+    .madang.suggestion .contents-body .banner .btn-suggest{bottom:4%}
+
+    .madang.service .tab-st li{width:50%}
+    .madang.service  .contents_table .title-st2:before{top:5px}
+    .madang.service .contents_table .title-st2{font-size:12px;line-height:20px}
+    .madang.service .text-box{margin:20px 0 0;padding:10px}
+    .madang.service .text-box .info-list li{margin:10px 0;}
+    .madang.service .text-box .sign{margin:10px 0 ;font-size:13px}
+    .madang.service .tabcon:nth-of-type(2) .info-list,
+    .madang.service .tabcon:nth-of-type(3) .info-list{padding-left:26px}
+    
+    .madang.service .tabcon:nth-of-type(3) .tab-st2 li{width:auto}
+    .madang.service .tabcon:nth-of-type(3) .title-st2{margin-left:0}
+    .madang.service .tabcon:nth-of-type(3)  .phase .info-list{padding-bottom:10px}
+
+    .madang.voc .board-list  .writerId-cell{width:12%}
+    .madang.voc .board-list  .status-cell{width:12%}
+    .madang.voc .text-box{padding:25px 10px}
+    .madang.voc .text-box p {font-size:12px}
+    .madang.voc .text-box p+p {margin-top:20px}
+    .madang.voc .answer-card .board-table-editor{padding:10px}
+    .madang.voc .answer-card dl:first-child {position:relative;padding-bottom:48px}
+    .madang.voc .answer-card dl:first-child dt{padding:0 12px;justify-content: flex-start;}
+    .madang.voc .answer-card dl:first-child dd{line-height:48px;padding:0 12px;font-size:12px}
+    .madang.voc .answer-card dl dt{width:70px;font-size:12px}
+    .madang.voc .answer-card dl dd{position:static;width:calc(100% - 70px)}
+    .madang.voc .answer-card dl dd .rightBox{top:48px;width:100%;padding:0 2px;transform:none;background:#F7F8FB;border-top:1px solid #c2c2c2;border-bottom:1px solid #c2c2c2}
+    .madang.voc .answer-card dl dd .rightBox p{padding:0 10px;font-size:12px}
+    .madang.voc .answer-card dl dd .rightBox p + p::before{height:8px}
+
+    .madang .faq-toggle .title-cell::before,
+    .madang .faq-toggle .answer::before{line-height:18px;font-size:11px;width:18px;height:18px;}
+    .madang .faq-toggle .title-cell::before{top:calc(50% - 9px);}
+    .madang .faq-toggle .answer::before{top:15px;left:10px;}
+    .madang .faq-toggle .title-cell{padding-left:27px}
+    .madang .faq-toggle .answer{padding:15px 10px}
+    .madang .faq-toggle .answer > div{padding-left:27px;}
+}
+@media screen and (max-width:640px) {
+    .sportCentre .sub-visual {background-image:url(../images/sub/img-visual-sportCentre-m.png)}
+    .gigym .sub-visual {background-image:url(../images/sub/img-visual-gigym-m.png) }
+    .madang .sub-visual {background-image:url(../images/sub/img-visual-madang-m.png)}
+    
+    .sportCentre.rent .procedure ul{margin:6px auto 0;}
+    .sportCentre.rent .procedure li{width:154px;margin-top:5px;margin-bottom:5px;box-shadow: 0 3px 5px 2px rgba(0,0,0,0.1);}
+    .sportCentre.shuttlebus01 .bus.pc,
+    .sportCentre.shuttlebus01 .bus.tablet{display: none;}
+    .sportCentre.shuttlebus01 .bus.mobile{display: block;}
+} 
